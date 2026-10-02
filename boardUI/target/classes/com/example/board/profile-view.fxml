@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.board.controllers.board.ProfileController">
+    <children>
+        <Button fx:id="logout" layoutX="79.0" layoutY="169.0" mnemonicParsing="false" text="Log out">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+      <Label layoutX="14.0" layoutY="104.0" text="Username:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="40.0" prefHeight="41.0" prefWidth="128.0" text="Profile" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="132.0" text="ID: ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="276.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="19.0" />
+      <Label fx:id="username" layoutX="84.0" layoutY="104.0" text="souroosh" />
+      <Label fx:id="id" layoutX="44.0" layoutY="132.0" text="53510bc3-3945-4f4e-8e48-4a2eff82fbe9" />
+      <Label alignment="CENTER" layoutX="295.0" layoutY="40.0" prefHeight="41.0" prefWidth="128.0" text="Boards" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="notification" layoutX="302.0" layoutY="14.0" style="-fx-background-color: red; -fx-label-padding: 5;" text="souroosh added to board fx">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="302.0" layoutY="122.0" prefHeight="454.0" prefWidth="477.0">
+        <content>
+          <AnchorPane minHeight="452.0" prefWidth="475.0">
+               <children>
+                  <VBox fx:id="boards" prefHeight="454.0" prefWidth="477.0" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="board" layoutX="302.0" layoutY="96.0" promptText="board name" />
+      <Button fx:id="add" layoutX="451.0" layoutY="96.0" mnemonicParsing="false" text="+" />
+      <Label fx:id="reaction" layoutX="484.0" layoutY="96.0" style="-fx-background-color: lightgreen; -fx-label-padding: 4;" text="g;ljsdgjs">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

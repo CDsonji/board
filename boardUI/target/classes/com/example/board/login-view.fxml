@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.board.controllers.auth.LoginController">
+    <children>
+        <TextField fx:id="username" layoutX="301.0" layoutY="211.0" prefHeight="32.0" prefWidth="199.0">
+            <effect>
+                <DropShadow />
+            </effect>
+        </TextField>
+        <PasswordField fx:id="password" layoutX="301.0" layoutY="291.0" prefHeight="32.0" prefWidth="199.0">
+            <effect>
+                <DropShadow />
+            </effect>
+        </PasswordField>
+        <Label layoutX="301.0" layoutY="179.0" prefHeight="32.0" prefWidth="153.0" text="Please Enter Your Username" />
+        <Label layoutX="301.0" layoutY="259.0" prefHeight="32.0" prefWidth="153.0" text="Please Enter Your Password" />
+        <Button fx:id="login" layoutX="374.0" layoutY="348.0" mnemonicParsing="false" text="Login">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="signUp" layoutX="304.0" layoutY="392.0" mnemonicParsing="false" text="I Don't Have An Account, Sign Up">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back">
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+      <Label fx:id="reaction" layoutX="66.0" layoutY="12.0" style="-fx-background-color: red; -fx-label-padding: 5;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

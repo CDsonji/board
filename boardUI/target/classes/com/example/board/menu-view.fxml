@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.board.controllers.MenuController">
+   <children>
+      <Label fx:id="success" alignment="BASELINE_LEFT" layoutX="54.0" layoutY="28.0" prefHeight="27.0" prefWidth="161.0" text="Welcome to MyBoard" textFill="#050505">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+         <effect>
+            <Glow level="0.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </Glow>
+         </effect>
+      </Label>
+      <Button fx:id="login" layoutX="293.0" layoutY="188.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="215.0" text="Login To MyBoard">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="signUp" layoutX="293.0" layoutY="300.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="215.0" text="Sign Up To MyBoard">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</Pane>

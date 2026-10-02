@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.board.controllers.task.TaskController">
+    <children>
+        <Button fx:id="view_tasks" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="view tasks">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="32.0" layoutY="156.0" text="Board:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="title" alignment="CENTER" layoutX="24.0" layoutY="53.0" prefHeight="41.0" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Label>
+        <Label fx:id="board" layoutX="75.0" layoutY="156.0" />
+        <Label fx:id="notification" layoutX="187.0" layoutY="12.0" style="-fx-background-color: red; -fx-label-padding: 5;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+      <Button fx:id="delete" layoutX="100.0" layoutY="14.0" mnemonicParsing="false" text="delete">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="182.0" text="Description:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="156.0" text="Priority">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="low_priority" layoutX="390.0" layoutY="156.0" mnemonicParsing="false" text="low" />
+      <RadioButton fx:id="medium_priority" layoutX="434.0" layoutY="156.0" mnemonicParsing="false" text="medium" />
+      <RadioButton fx:id="high_priority" layoutX="511.0" layoutY="156.0" mnemonicParsing="false" text="high" />
+      <Label layoutX="338.0" layoutY="182.0" text="Status">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="todo_status" layoutX="387.0" layoutY="182.0" mnemonicParsing="false" text="todo" />
+      <RadioButton fx:id="in_progress_status" layoutX="443.0" layoutY="182.0" mnemonicParsing="false" text="in progress" />
+      <RadioButton fx:id="done_status" layoutX="532.0" layoutY="182.0" mnemonicParsing="false" text="done" />
+      <Label fx:id="reaction" layoutX="63.0" layoutY="115.0" style="-fx-background-color: red; -fx-label-padding: 5;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="description" layoutX="24.0" layoutY="204.0" minWidth="0.0" prefWidth="277.0" wrapText="true" />
+      <DatePicker fx:id="due_date" layoutX="394.0" layoutY="229.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button fx:id="edit_description" layoutX="24.0" layoutY="398.0" mnemonicParsing="false" text="edit" />
+      <TextField fx:id="new_title" layoutX="336.0" layoutY="270.0" promptText="title" />
+      <Button fx:id="edit_title" layoutX="491.0" layoutY="270.0" mnemonicParsing="false" text="edit" />
+      <Label layoutX="335.0" layoutY="233.0" text="Due_Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

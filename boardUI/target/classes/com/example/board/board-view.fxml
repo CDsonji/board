@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.board.controllers.board.BoardController">
+    <children>
+        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="back">
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="23.0" layoutY="64.0" text="Owner Username:">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="name" alignment="CENTER" layoutX="116.0" layoutY="1.0" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="80.0" text="Owner ID: ">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Separator layoutX="394.0" layoutY="199.0" orientation="VERTICAL" prefHeight="470.0" prefWidth="19.0" />
+        <Label fx:id="owner_username" layoutX="130.0" layoutY="64.0" text="souroosh" />
+        <Label fx:id="owner_id" layoutX="83.0" layoutY="80.0" text="53510bc3-3945-4f4e-8e48-4a2eff82fbe9" />
+        <Label alignment="CENTER" layoutX="588.0" layoutY="105.0" prefHeight="51.0" prefWidth="100.0" text="Tasks" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Label>
+        <Label fx:id="notification" layoutX="561.0" layoutY="12.0" style="-fx-background-color: red; -fx-label-padding: 5;" text="souroosh added to board fx">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <ScrollPane layoutX="425.0" layoutY="201.0" prefHeight="454.0" prefWidth="428.0">
+            <content>
+                <AnchorPane minHeight="452.0" prefHeight="452.0" prefWidth="392.0">
+               <children>
+                  <VBox fx:id="tasks" layoutX="9.0" layoutY="6.0" minHeight="439.0" prefHeight="439.0" prefWidth="409.0" />
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+        <Button fx:id="add_task" layoutX="1058.0" layoutY="198.0" mnemonicParsing="false" text="+" />
+        <Label fx:id="reaction" layoutX="484.0" layoutY="96.0" style="-fx-background-color: lightgreen; -fx-label-padding: 4;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1082.0" layoutY="198.0" prefHeight="26.0" prefWidth="74.0" text="Add Task">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ScrollPane layoutX="35.0" layoutY="201.0" prefHeight="454.0" prefWidth="341.0">
+            <content>
+                <AnchorPane minHeight="450.0" prefWidth="338.0">
+               <children>
+                  <VBox fx:id="users" layoutX="10.0" layoutY="8.0" minHeight="435.0" prefHeight="442.0" prefWidth="320.0" />
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+        <Button fx:id="add_user" layoutX="35.0" layoutY="176.0" mnemonicParsing="false" text="+" />
+        <Label alignment="CENTER" layoutX="63.0" layoutY="113.0" prefHeight="51.0" prefWidth="284.0" text="Associated Users" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Label>
+        <TextField fx:id="new_user" layoutX="59.0" layoutY="176.0" prefHeight="25.0" prefWidth="89.0" promptText="username" />
+        <Label fx:id="user_reaction" layoutX="152.0" layoutY="176.0" style="-fx-background-color: lightgreen; -fx-label-padding: 4;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="task_reaction" layoutX="425.0" layoutY="176.0" style="-fx-background-color: lightgreen; -fx-label-padding: 4;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+      <TextField fx:id="title" layoutX="869.0" layoutY="202.0" promptText="title" />
+      <TextArea fx:id="description" layoutX="869.0" layoutY="236.0" prefHeight="90.0" prefWidth="302.0" promptText="description" />
+      <DatePicker fx:id="due_date" layoutX="996.0" layoutY="332.0" promptText="due date" />
+      <RadioButton fx:id="low_priority" layoutX="882.0" layoutY="357.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="42.0" text="low" />
+      <Label layoutX="882.0" layoutY="335.0" prefHeight="19.0" prefWidth="49.0" text="Priority">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <RadioButton fx:id="medium_priority" layoutX="882.0" layoutY="384.0" mnemonicParsing="false" text="medium" />
+      <RadioButton fx:id="high_priority" layoutX="882.0" layoutY="410.0" mnemonicParsing="false" text="high" />
+    </children>
+</Pane>
